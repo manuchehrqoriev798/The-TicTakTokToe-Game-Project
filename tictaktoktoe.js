@@ -108,8 +108,8 @@ const checkGameStatus = () => {                                                 
     cellDivs[1].classList.add('won');
     cellDivs[2].classList.add('won');
     cellDivs[3].classList.add('won');
-  } else if (one && one === two && one === three && four === four) {
-    handleWin(four);
+  } else if (one && one === two && one === three && one === four) {
+    handleWin(one);
     cellDivs[1].classList.add('won');
     cellDivs[2].classList.add('won');
     cellDivs[3].classList.add('won');
