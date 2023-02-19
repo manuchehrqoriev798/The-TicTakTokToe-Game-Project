@@ -68,12 +68,12 @@ body{
 .game-grid {
     background-color: rgb(218, 209, 209);
     display: grid;
-    grid-template-columns: repeat(7, 2fr) ;                    /* equally destrubutes space to 3
-    grid-template-rows: repeat(6, 1fr);                        /*equally destrubutes space to 3 */
+    grid-template-columns: repeat(7, 2fr) ;                    /* equally destrubutes space to 3 */
+    grid-template-rows: repeat(6, 1fr);                        
     grid-gap: 7px;                                            /* distance between grid elements */
     margin-top: 50px;
 }
-.game-cell {
+.cell {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,9 +88,7 @@ body{
     cursor: default;                                          /* cursor does not react to text*/
 }
 
-/* .game-cell::before {          this puts x in all cells
-    content: 'x';
-} */
+
 .x::after{                     /* why just x class because in javascript we add x as third class of game-cell element*/
     content: '×';              /* changes property of the content after some actions*/      
     color: white;
@@ -103,6 +101,15 @@ body{
 .won::after{
     color: red;
 }
+
+
+
+
+
+
+
+
+
 
 /* @media only screen  and (max-width:1300px) and (min-width:1200px){                 
     .container{
